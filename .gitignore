@@ -1,0 +1,5 @@
+osuVote/__pycache__/
+votes/__pycache__
+osuVoteEnv/*
+*$py.class
+.env
