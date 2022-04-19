@@ -1,7 +1,7 @@
+__pycache__
 osuVote/__pycache__/
 votes/__pycache__
-osuVoteEnv/*
-virtualenv
 *$py.class
 .env
 chuarsevirtual
+schenv
