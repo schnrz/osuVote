@@ -9,7 +9,7 @@ class Usuario(AbstractUser):
         blank=False,
         max_length=15
     )
-    osu_id = models.IntegerField()
+    osu_id = models.IntegerField(default=None, null=True)
     avatar_url = models.CharField(
         unique=False, 
         null=False,
