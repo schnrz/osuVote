@@ -30,7 +30,7 @@ SECRET_KEY = env('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-AUTH_USER_MODEL = 'votes.Player'
+#AUTH_USER_MODEL = 'votes.Player'
 
 ALLOWED_HOSTS = []
 

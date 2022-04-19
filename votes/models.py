@@ -2,7 +2,7 @@ from django.db import models
 from django.contrib.auth.models import AbstractUser
 from django.conf import settings
 
-class Player(AbstractUser):
+class Player(models.Model):
     nick = models.CharField(
         unique=False, 
         null=False,
@@ -22,9 +22,11 @@ class Player(AbstractUser):
         blank=False,
         max_length=200
     )
+    def __str__(self):
+        return self.nick
 
 class PlayerVotes(models.Model):
-    voter_id = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name="fk_voter_id")
+    voter_id = models.ForeignKey(Player, on_delete=models.CASCADE)
     osu_id = models.IntegerField()
     nick = models.CharField(
         unique=False, 
@@ -39,3 +41,6 @@ class PlayerVotes(models.Model):
         max_length=200
     )
     points = models.IntegerField()
+
+    def __str__(self):
+        return self.nick
