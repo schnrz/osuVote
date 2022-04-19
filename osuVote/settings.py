@@ -30,7 +30,7 @@ SECRET_KEY = env('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-AUTH_USER_MODEL = 'votes.usuario'
+AUTH_USER_MODEL = 'votes.Player'
 
 ALLOWED_HOSTS = []
 
@@ -84,7 +84,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'OsuVotes',
         'USER': 'postgres',
-        'PASSWORD': env('PASSWORD'),
+        'PASSWORD': env('pwd'),
         'HOST': 'localhost',
         'PORT': 5432,
     }

@@ -2,6 +2,7 @@ __pycache__
 .vscode
 osuVote/__pycache__/
 votes/__pycache__
+votes/migrations/__pycache__
 *$py.class
 .env
 chuarsevirtual
