@@ -82,9 +82,11 @@ WSGI_APPLICATION = 'osuVote.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'PASSWORD': 'poggerssql',
+        'NAME': 'OsuVotes',
+        'USER': 'postgres',
+        'PASSWORD': env('PASSWORD'),
         'HOST': 'localhost',
-        'PORT': '5432',
+        'PORT': 5432,
     }
 }
 
