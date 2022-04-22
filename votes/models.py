@@ -23,7 +23,12 @@ class Player(models.Model):
         max_length=200
     )
     def __str__(self):
+        # String to give nick attr to admin site
         return self.nick
+
+    # this may be useful later 
+    # def get_absolute_url(self):
+    #     return reverse('model-detail-view', args=[str(self.user_id)])
 
 class PlayerVotes(models.Model):
     voter_id = models.ForeignKey(Player, on_delete=models.CASCADE)
@@ -43,4 +48,5 @@ class PlayerVotes(models.Model):
     points = models.IntegerField()
 
     def __str__(self):
+        # String to give nick attr to admin site
         return self.nick
