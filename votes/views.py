@@ -4,7 +4,8 @@ from .models import Player, PlayerVotes
 
 # Create your views here.
 def index(request):
-    return HttpResponse("<h1>pekoepa</h1> mis panas")
+    return render(request, 'home.html')
+
 
 def vote(request):
     numero = Player.objects.all().count()
