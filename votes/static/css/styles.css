@@ -1,18 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
 
 body {
-    padding:0;
+    padding: 100px;
     margin:0;
     background: #1b1b1b;
 }
+#titulo {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 12px auto;
+    margin-top: 3rem;
+    max-width: 600px;
+    height: auto;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size:60px;
+    color: #fff;
+    background-color: #1e1e1e;
+    border-radius: 30px;
+    filter: drop-shadow(0 20px 9px rgba(0, 0, 0, 0.13));
+}
 
 .container{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 100px auto;
     box-sizing: border-box;
     display: block;
-    padding-left: 30rem;
-    padding-right: 30rem;
-    margin-left: 25rem;
-    margin-right: 25rem;
+    padding: 10px;
     align-items: center;
     text-align: center;
     background: #1e1e1e;
@@ -20,25 +39,9 @@ body {
     filter: drop-shadow(0 20px 9px rgba(0, 0, 0, 0.13));
 }
 
-#titulo {
-
-    text-align: center;
-    font-family: 'Ubuntu', sans-serif;
-    font-size:60px;
-    color: #fff;
-    background-color: #1e1e1e;
-    border-radius: 30px;
-    margin-top: 200px;
-    margin-left: 700px;
-    margin-right: 700px;
-    filter: drop-shadow(0 20px 9px rgba(0, 0, 0, 0.13));
-}
-
 #kksu{
-    margin-top: 2rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    margin-bottom: 2rem;
+    margin: 30px auto;
+    max-width: 200px;
 }
 
 #piesito{
@@ -63,6 +66,12 @@ body {
     font-family: 'Ubuntu', sans-serif;
     outline: none;
     transition: ease-in-out 0.20s;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 .login_botton:hover{
     color: white;
@@ -81,6 +90,7 @@ body {
     font-weight: bold;
     letter-spacing: 2px;
     cursor: pointer;
+    margin-bottom: 4rem;
   }
   #piesito span{
     transition: .2s ease-in-out;
