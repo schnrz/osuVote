@@ -1,8 +1,105 @@
-.content{
-    position: relative;
-    margin-top: 400px;
-    font: sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
+
+body {
+    padding:0;
+    margin:0;
+    background: #1b1b1b;
 }
-h1 {
-    color: red;
+
+.container{
+    box-sizing: border-box;
+    display: block;
+    padding-left: 30rem;
+    padding-right: 30rem;
+    margin-left: 25rem;
+    margin-right: 25rem;
+    align-items: center;
+    text-align: center;
+    background: #1e1e1e;
+    border-radius: 26px;
+    filter: drop-shadow(0 20px 9px rgba(0, 0, 0, 0.13));
+}
+
+#titulo {
+
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size:60px;
+    color: #fff;
+    background-color: #1e1e1e;
+    border-radius: 30px;
+    margin-top: 200px;
+    margin-left: 700px;
+    margin-right: 700px;
+    filter: drop-shadow(0 20px 9px rgba(0, 0, 0, 0.13));
+}
+
+#kksu{
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+}
+
+#piesito{
+    position: relative;
+    margin-top: 40px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: #2f2f2f;
+}
+
+.login_botton{
+    display: inline-flex;
+    text-decoration: none;
+    border: none;
+    padding: 17px 50px;
+    color: #fff;
+    font-size: 20px;
+    background-image: url('SVG/triangles_texture.svg') ;
+    background-size: 10rem;
+    border-radius: 28px;
+    margin: 10px 10px 10px 10px;
+    font-family: 'Ubuntu', sans-serif;
+    outline: none;
+    transition: ease-in-out 0.20s;
+}
+.login_botton:hover{
+    color: white;
+    font-family: 'Ubuntu', sans-serif; 
+    filter: brightness(120%);
+    box-shadow: 0 0 30px #FF74BA;
+}
+
+#piesito{
+    text-decoration: none;
+    position: relative;
+    margin-top: 40px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: #2f2f2f;
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: pointer;
   }
+  #piesito span{
+    transition: .2s ease-in-out;
+  }
+  #piesito:hover span:nth-child(1){
+    margin-right: 5px;
+  }
+  #piesito:hover span{
+    color: #fff;
+    text-shadow: 0 0 10px #fff,
+                 0 0 20px #fff, 
+                 0 0 40px #fff;
+  }
+
+a, a:link, a:visited{
+    color: #3a3a3a;
+    text-decoration: none;
+    transition: .3s ease-in-out;
+}
+a:hover{
+    color: #fff;
+}
