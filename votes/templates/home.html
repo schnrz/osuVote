@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+  {% load static %}
   <meta name="viewport" content="with=device-width, initial-scale=1.0">
   <title>Iniciar sesión con Osu!</title>
-  <link rel="stylesheet" href="/votes/static/css/styles.css">
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}">
 </head>
 <body>
-  <section class="header">
-    
-  </section>
+  <div class="container">
+    <h1>Iniciar sesión con Osu!</h1>
+    <form>
+      <input type="submit" id="login" name"Iniciar Sesión"></input>
+    </form>
   </div>
+
 </body>
 </html>
