@@ -76,7 +76,6 @@ TEMPLATES = [
 ]
 #CSS loader
 
-
 WSGI_APPLICATION = 'osuVote.wsgi.application'
 
 # Database
