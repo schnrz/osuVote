@@ -1,0 +1,19 @@
+.container{
+    position: relative;
+    margin-top: 400px;
+    margin-left: 1000px;
+    margin-right: 1000px;
+    align-items: center;
+    text-align: center;
+    background: #1e1e1e;
+    border-radius: 26px;
+}
+h1 {
+    color: red;
+  }
+
+body {
+    padding:0;
+    margin:0;
+    background: #1b1b1b;
+}

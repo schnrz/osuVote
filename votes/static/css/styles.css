@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
+
+body {
+    padding: 100px 0px 0px 0px;
+    margin:0;   
+    background: #1b1b1b;
+    height:100% !important;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+#titulo {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 2rem auto;
+    padding: 7px auto;
+    max-width: 600px;
+    height: auto;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size:60px;
+    color: #fff;
+    filter: drop-shadow(0 20px 9px rgba(0, 0, 0, 0.13));
+    caret-color: transparent;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 100px auto;
+    box-sizing: border-box;
+    display: block; 
+    padding: 20px;
+    padding-bottom: 40px;
+    align-items: center;
+    text-align: center;
+    background: #1e1e1e;
+    border-radius: 26px;
+    filter: drop-shadow(0 10px 9px rgba(0, 0, 0, 0.50));
+    user-select: text;
+}
+
+#kksu{
+    margin: 30px auto;
+    max-width: 200px;
+    caret-color: transparent;
+    filter: drop-shadow(0 5px 3px rgba(0, 0, 0, 0.40));
+}
+
+.login_botton{
+    display: inline-flex;
+    text-decoration: none;
+    border: none;
+    padding: 17px 50px;
+    color: #fff;
+    font-size: 20px;
+    background-image: url('SVG/triangles_texture.svg') ;
+    background-size: 10rem;
+    border-radius: 28px;
+    margin: 20px 5px 10px 10px;
+    font-family: 'Ubuntu', sans-serif;
+    outline: none;
+    transition: ease-in-out 0.20s;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    caret-color: transparent;
+}
+.login_botton:hover{
+    color: white;
+    font-family: 'Ubuntu', sans-serif; 
+    filter: brightness(120%);
+    box-shadow: 0 0 30px #FF74BA;
+    caret-color: transparent;
+    background-position: 0 -102px;
+    padding: 17px 50px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
+
+#logo_github{
+    width: auto;
+    max-height: 20px;
+    margin-right: 10px;
+    filter: drop-shadow(0 10px 9px rgba(0, 0, 0, 0.50));
+}
+
+#piesito{
+    text-decoration: none;
+    position: relative;
+    margin-top: 40px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    color: #2f2f2f;
+    font-weight: bold;
+    letter-spacing: 2px;
+    caret-color: transparent;
+    margin-bottom: 4rem;
+    filter: drop-shadow(0 10px 9px rgba(0, 0, 0, 0.50));
+}
+#piesito span{
+    transition: .15s ease-in-out;
+}
+#piesito:hover span:nth-child(1){
+    margin-right: 5px;
+}
+#piesito:hover span{
+    color: #fff;
+    text-shadow: 0 0 10px #fff,
+                 0 0 20px #fff, 
+                 0 0 40px #fff;
+}
+
+a, a:link, a:visited{
+    color: #3a3a3a;
+    text-decoration: none;
+    transition: .15s ease-in-out;
+}
+a:hover{
+    color: #fff;
+}
+
