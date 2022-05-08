@@ -4,6 +4,7 @@ body {
     padding: 100px 0px 0px 0px;
     margin:0;   
     background: #1b1b1b;
+    height:100% !important;
 }
 #titulo {
     display: flex;
