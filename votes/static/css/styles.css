@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
 
 body {
-    padding: 100px;
-    margin:0;
+    padding: 100px 0px 0px 0px;
+    margin:0;   
     background: #1b1b1b;
 }
 #titulo {
     display: flex;
     justify-content: space-around;
     width: 100%;
-    margin: 12px auto;
+    margin: 2rem auto;
     padding: 7px auto;
     max-width: 600px;
     height: auto;
@@ -17,8 +17,6 @@ body {
     font-family: 'Ubuntu', sans-serif;
     font-size:60px;
     color: #fff;
-    background-color: #1e1e1e;
-    border-radius: 30px;
     filter: drop-shadow(0 20px 9px rgba(0, 0, 0, 0.13));
     caret-color: transparent;
 }
@@ -31,13 +29,14 @@ body {
     height: auto;
     margin: 100px auto;
     box-sizing: border-box;
-    display: block;
-    padding: 10px;
+    display: block; 
+    padding: 20px;
+    padding-bottom: 40px;
     align-items: center;
     text-align: center;
     background: #1e1e1e;
     border-radius: 26px;
-    filter: drop-shadow(0 20px 9px rgba(0, 0, 0, 0.13));
+    filter: drop-shadow(0 10px 9px rgba(0, 0, 0, 0.50));
     user-select: text;
 }
 
@@ -45,15 +44,7 @@ body {
     margin: 30px auto;
     max-width: 200px;
     caret-color: transparent;
-}
-
-#piesito{
-    position: relative;
-    margin-top: 40px;
-    text-align: center;
-    font-family: 'Open Sans', sans-serif;
-    color: #2f2f2f;
-    caret-color: transparent;
+    filter: drop-shadow(0 5px 3px rgba(0, 0, 0, 0.40));
 }
 
 .login_botton{
@@ -66,7 +57,7 @@ body {
     background-image: url('SVG/triangles_texture.svg') ;
     background-size: 10rem;
     border-radius: 28px;
-    margin: 10px 10px 10px 10px;
+    margin: 20px 5px 10px 10px;
     font-family: 'Ubuntu', sans-serif;
     outline: none;
     transition: ease-in-out 0.20s;
@@ -84,6 +75,10 @@ body {
     filter: brightness(120%);
     box-shadow: 0 0 30px #FF74BA;
     caret-color: transparent;
+    background-position: 0 -102px;
+    padding: 17px 50px;
+    border-radius: 5px;
+    letter-spacing: 1px;
 }
 
 #piesito{
@@ -91,31 +86,60 @@ body {
     position: relative;
     margin-top: 40px;
     text-align: center;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     color: #2f2f2f;
     font-weight: bold;
     letter-spacing: 2px;
     caret-color: transparent;
     margin-bottom: 4rem;
-  }
-  #piesito span{
-    transition: .2s ease-in-out;
-  }
-  #piesito:hover span:nth-child(1){
+    filter: drop-shadow(0 10px 9px rgba(0, 0, 0, 0.50));
+}
+#piesito span{
+    transition: .15s ease-in-out;
+}
+#piesito:hover span:nth-child(1){
     margin-right: 5px;
-  }
-  #piesito:hover span{
+}
+#piesito:hover span{
     color: #fff;
     text-shadow: 0 0 10px #fff,
                  0 0 20px #fff, 
                  0 0 40px #fff;
-  }
+}
 
 a, a:link, a:visited{
     color: #3a3a3a;
     text-decoration: none;
-    transition: .3s ease-in-out;
+    transition: .15s ease-in-out;
 }
 a:hover{
     color: #fff;
 }
+
+#logo_github{
+    width: auto;
+    max-height: 20px;
+    margin-right: 10px;
+    filter: invert(100%); 
+    filter: drop-shadow(0 10px 9px rgba(0, 0, 0, 0.50));
+}
+
+body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
