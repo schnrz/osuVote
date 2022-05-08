@@ -10,7 +10,7 @@ body {
     justify-content: space-around;
     width: 100%;
     margin: 12px auto;
-    margin-top: 3rem;
+    padding: 7px auto;
     max-width: 600px;
     height: auto;
     text-align: center;
@@ -20,6 +20,7 @@ body {
     background-color: #1e1e1e;
     border-radius: 30px;
     filter: drop-shadow(0 20px 9px rgba(0, 0, 0, 0.13));
+    caret-color: transparent;
 }
 
 .container{
@@ -37,11 +38,13 @@ body {
     background: #1e1e1e;
     border-radius: 26px;
     filter: drop-shadow(0 20px 9px rgba(0, 0, 0, 0.13));
+    user-select: text;
 }
 
 #kksu{
     margin: 30px auto;
     max-width: 200px;
+    caret-color: transparent;
 }
 
 #piesito{
@@ -50,6 +53,7 @@ body {
     text-align: center;
     font-family: 'Open Sans', sans-serif;
     color: #2f2f2f;
+    caret-color: transparent;
 }
 
 .login_botton{
@@ -72,12 +76,14 @@ body {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    caret-color: transparent;
 }
 .login_botton:hover{
     color: white;
     font-family: 'Ubuntu', sans-serif; 
     filter: brightness(120%);
     box-shadow: 0 0 30px #FF74BA;
+    caret-color: transparent;
 }
 
 #piesito{
@@ -89,7 +95,7 @@ body {
     color: #2f2f2f;
     font-weight: bold;
     letter-spacing: 2px;
-    cursor: pointer;
+    caret-color: transparent;
     margin-bottom: 4rem;
   }
   #piesito span{
