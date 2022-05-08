@@ -11,7 +11,11 @@
   <div class="container">
     <img>
       <img id="kksu" src="https://upload.wikimedia.org/wikipedia/commons/1/1e/Osu%21_Logo_2016.svg" alt="Logo de osu que no carga, gracias pepaPig"></img>
-      <botton class="login_botton"><span>Iniciar sesión con Osu!</span></botton>
+      <button class="login_button">
+        <a href="{% url 'auth' %}">
+          <span>Iniciar sesión con Osu!</span>
+        </a>
+      </button>
     </form>
   </div>
 <Footer id="piesito"><img id="logo_github" src="{% static 'css/svg/github_logo.svg'%}" atl="Github">Developed by <span><a href="https://github.com/schnrz" target="_blank">Schwarze</a></span> & <span><a href="https://github.com/Erio56" target="_blank">Erio</a></span></Footer>

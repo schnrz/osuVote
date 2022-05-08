@@ -7,11 +7,11 @@ import requests
 from votes import osu_auth
 
 # Create your views here.
-def index(request: HttpRequest) -> JsonResponse:
-    context = {
-        'token': osu_auth.auth_url()
-    }
-    # return render(request, 'home.html', context=context)
+def index(request):
+    return render(request, 'home.html')
+    # return redirect(osu_auth.auth_url())
+
+def auth_redir(request: HttpRequest) -> JsonResponse:
     return redirect(osu_auth.auth_url())
 
 def vote(request):

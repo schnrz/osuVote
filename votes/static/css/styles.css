@@ -65,7 +65,7 @@ body {
     filter: drop-shadow(0 5px 3px rgba(0, 0, 0, 0.40));
 }
 
-.login_botton{
+.login_button{
     display: inline-flex;
     text-decoration: none;
     border: none;
@@ -87,7 +87,7 @@ body {
     user-select: none;
     caret-color: transparent;
 }
-.login_botton:hover{
+.login_button:hover{
     color: white;
     font-family: 'Ubuntu', sans-serif; 
     filter: brightness(120%);
@@ -97,6 +97,10 @@ body {
     padding: 17px 50px;
     border-radius: 5px;
     letter-spacing: 1px;
+}
+
+.login_button span{
+    color: #fff;
 }
 
 #logo_github{
@@ -122,9 +126,11 @@ body {
 #piesito span{
     transition: .15s ease-in-out;
 }
+
 #piesito:hover span:nth-child(1){
     margin-right: 5px;
 }
+
 #piesito:hover span{
     color: #fff;
     text-shadow: 0 0 10px #fff,
