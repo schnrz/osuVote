@@ -24,13 +24,11 @@ def auth_grant(code: str):
     }
 
     url = env('TOKEN_URL')
-    response = requests.post(url, params=params, headers=headers)
+    response = requests.post(url, data=params)
     credentials = response.json()
-    print(response)
     return response.json()
 
-def get_token():
-    # code = auth_grant().json().get('')
+def get_osu_user():
 
     data = {
         'client_id': env('CLIENT_ID'), 
