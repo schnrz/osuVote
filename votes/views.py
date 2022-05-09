@@ -18,6 +18,6 @@ def vote(request):
     # numero = Player.objects.all().count()
     code = request.GET.get('code')
     context = {
-        'codigo': osu_auth.auth_grant(code),
+        #'codigo': osu_auth.auth_grant(code),
     }
     return render(request,'index.html', context=context)
