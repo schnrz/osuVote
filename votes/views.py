@@ -21,3 +21,19 @@ def vote(request):
         #'codigo': osu_auth.auth_grant(code),
     }
     return render(request,'index.html', context=context)
+
+def voting(request):
+    # numero = Player.objects.all().count()
+    #code = request.GET.get('code')
+    context = {
+        #'codigo': osu_auth.auth_grant(code),
+    }
+    return render(request,'voting_page.html', context=context)
+
+# def stats(request):
+#     # numero = Player.objects.all().count()
+#     code = request.GET.get('code')
+#     context = {
+#         #'codigo': osu_auth.auth_grant(code),
+#     }
+#     return render(request,'.html', context=context)
