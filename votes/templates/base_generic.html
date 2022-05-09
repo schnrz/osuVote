@@ -4,18 +4,21 @@
   {% block title %}<title>Osu!Colombia Voting System</title>{% endblock %}
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  
 
   <!-- Add additional CSS in static file -->
   {% load static %}
   <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+  
 </head>
 <body>
   <div>
       {% block navigation %}
+      <link rel="stylesheet" href="{% static 'css/base_generic.css' %}">
       <div class="navigation">
-          <span><a id="nav-home" href="{% url 'index' %}">Sistema de votación 2022</a></span>
-          <span><a id="nav-votes" href="">Votos</a></span>
-          <span><a id="nav-results" href="">Resultados</a></span>
+          <span><a id="nav_home_logo" class="nav_link"  href="{% url 'index' %}">Sistema de votación 2022</a></span>
+          <span><a class="nav_link" href="">Votos</a></span>
+          <span><a class="nav_link" href="">Resultados</a></span>
       </div>
      {% endblock %}
       <div class="col-sm-10 ">{% block content %}{% endblock %}</div>

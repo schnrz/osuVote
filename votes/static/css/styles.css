@@ -1,34 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
 
-.navigation {
-    display: flex;
-    padding: 15px;
-    background-color: #1e1e1e;
-}
-
-.navigation span {
-    font-size: 40px;
-    margin-left: 30px;
-    color: gray;
-    font-family: 'Ubuntu';
-    
-}
-
-#nav-home span {
-    font-size: 30px;
-    margin-left: 30px;
-    color: gray;
-    font-family: 'Ubuntu';
-    
-}
-
-
-body{
-    margin:0;
-    background: #1b1b1b;
-    height:100%;
-}
-
 .body_login {
     padding: 100px 0px 0px 0px;
     margin:0;
@@ -118,7 +89,9 @@ body{
     -ms-user-select: none;
     user-select: none;
     caret-color: transparent;
-align-content: center;justify-content: center;}
+    align-content: center;
+    justify-content: center;}
+
 .login_button:hover{
     color: white;
     font-family: 'Ubuntu', sans-serif; 

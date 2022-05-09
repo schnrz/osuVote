@@ -1,0 +1,51 @@
+:root{
+    --button_color: rgb(52, 112, 161);
+    --button_color_alpha: rgba(52, 112, 161, 0.2);
+}
+
+.navigation {
+    display: flex;
+    padding: 15px;
+    background-color: #1e1e1e;
+}
+
+.navigation span {
+    font-size: 1.5vw;
+    margin-left: 30px;
+    color: gray;
+    font-family: 'Ubuntu';
+}
+
+#nav-home span {
+    font-size: 30px;
+    margin-left: 30px;
+    color: gray;
+    font-family: 'Ubuntu';
+}
+
+body{
+    margin:0;
+    background: #1b1b1b;
+    height:100%;
+}
+
+
+.nav_link{
+    padding: 3px 15px 3px 15px;
+    border-radius: 15px;
+    transition: ease-in-out 0.14s;
+}
+
+.nav_link:hover{
+
+    background-color: var(--button_color);
+    color: #fff;
+    border-radius: none;
+    filter: drop-shadow( 0 10px 10px var(--button_color_alpha)) brightness(120%);
+}
+
+#nav_home_logo:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    filter: drop-shadow( 0 10px 10px rgba(255, 255, 255, 0.192)) brightness(120%);
+}
