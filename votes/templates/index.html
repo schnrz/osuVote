@@ -1,11 +1,24 @@
 {% extends "base_generic.html" %}
-
+{% load static %}
 {% block content %}
-  <h1>Local Library Home</h1>
-  <p>Welcome to LocalLibrary, a website developed by <em>Mozilla Developer Network</em>!</p>
-  <h2>Dynamic content</h2>
-  <p>The library has the following record counts:</p>
-  <ul>
-    <li><strong>Books:</strong> <img src="{{ codigo }}" alt=""></li>
-  </ul>
+<link rel="stylesheet" href="{% static 'css/stylevotes.css' %}">
+  <div class="container">
+    <a href="{% url 'auth' %}">
+      <button class="login_button">
+        <span>Votar</span>
+      </button>
+    </a>
+    <a href="{% url 'auth' %}">
+      <button class="login_button">
+        <span>Ver resultados</span>
+      </button>
+    </a>
+  </div>
+  <img src="{{ codigo }}" alt="">
+  <link rel="stylesheet" href="{% static 'css/stylevotes.css' %}">
+  <div class="logout">
+    <a href="{% url 'auth' %}">
+      <button id="logout_button">Cerrar sesión</button>
+    </a>  
+  </div>
 {% endblock %}

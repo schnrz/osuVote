@@ -1,0 +1,66 @@
+.container{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 100px auto;
+    margin-bottom: 40px;
+    box-sizing: border-box;
+    display: block; 
+    padding: 20px;
+    padding-bottom: 20px;
+    align-items: center;
+    text-align: center;
+    background: #1e1e1e;
+    border-radius: 26px;
+    filter: drop-shadow(0 10px 9px rgba(0, 0, 0, 0.50));
+    user-select: text;
+}
+
+.logout{
+    display: flex;  
+    justify-content: center;  
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+#logout_button{
+    width: auto;
+    max-width: 180px;
+    background-color: #161616;
+    color: #9b9b9b;
+    height: auto;
+    cursor: pointer;
+    display: inline-flex;
+    padding: 10px;
+    text-decoration: none;
+    border: none;
+    font-size: 15px;
+    font-weight: Light;
+    border-radius: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    outline: none;
+    transition: ease-in-out 0.14s;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    caret-color: transparent;
+    align-content: center;
+    justify-content: center;
+}
+
+#logout_button:hover{
+    color: white;
+    font-family: 'Ubuntu', sans-serif; 
+    caret-color: transparent;
+}
+
+#logout_buton span{
+    color: #fff;
+    text-align: center;
+    transition: ease-in-out 0.13s !important;
+}
