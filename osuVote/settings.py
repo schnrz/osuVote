@@ -31,7 +31,9 @@ SECRET_KEY = env('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-#AUTH_USER_MODEL = 'votes.Player'
+AUTHENTICATION_BACKENDS = [
+    'votes.auth.PlayerAuthenticationBackend'
+]
 
 ALLOWED_HOSTS = []
 
@@ -84,7 +86,7 @@ WSGI_APPLICATION = 'osuVote.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'OsuVotes',
+        'NAME': 'osu_vote',
         'USER': 'postgres',
         'PASSWORD': env('pwd'),
         'HOST': 'localhost',

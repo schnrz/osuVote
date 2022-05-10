@@ -1,8 +1,10 @@
 from django.db import models
-from django.contrib.auth.models import AbstractUser
-from django.conf import settings
+from django.contrib.auth.models import AbstractUser 
+from .managers import PlayerOAuth2Manager
 
 class Player(models.Model):
+    objects = PlayerOAuth2Manager()
+
     nick = models.CharField(
         unique=False, 
         null=False,
@@ -22,6 +24,7 @@ class Player(models.Model):
         blank=False,
         max_length=200
     )
+    last_login = models.DateTimeField(null=True)
     def __str__(self):
         # String to give nick attr to admin site
         return self.nick
@@ -30,8 +33,12 @@ class Player(models.Model):
     # def get_absolute_url(self):
     #     return reverse('model-detail-view', args=[str(self.user_id)])
 
-class PlayerVotes(models.Model):
-    voter_id = models.ForeignKey(Player, on_delete=models.CASCADE)
+# TODO: check if this works ffs
+# def is_authenticated(self, request):
+#     return True
+
+class PlayerVote(models.Model):
+    voter = models.ForeignKey(Player, on_delete=models.CASCADE)
     osu_id = models.IntegerField()
     nick = models.CharField(
         unique=False, 

@@ -14,7 +14,6 @@ def auth_grant(code: str):
         'Content-Type': 'application/json',
         'Accept': 'application/json',
     }
-
     params = {
         'client_id': env('CLIENT_ID'),
         'client_secret': env('CLIENT_SECRET'),
@@ -25,22 +24,15 @@ def auth_grant(code: str):
 
     url = env('TOKEN_URL')
     response = requests.post(url, data=params)
-    credentials = response.json()
     return response.json()
 
-def get_osu_user():
+def get_osu_user(code: str):
+    token = auth_grant(code)
 
-    data = {
-        'client_id': env('CLIENT_ID'), 
-        'client_secret': env('CLIENT_SECRET'),
-        'grant_type': 'authorization_code'
+    headers = {
+        'Authorization': f"{token['token_type']} {token['access_token']}",
     }
+    url = env('API_URL') + 'me'
 
-    url = env('TOKEN_URL')
-
-    response = requests.post(url, data=data)
-    if response:
-        return response.json().get('access_token')
-    else:
-        return response
-    # .json().get('access_token')
+    response = requests.get(url, headers=headers)
+    return response

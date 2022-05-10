@@ -3,4 +3,4 @@ from . import models
 # Register your models here.
 
 admin.site.register(models.Player)
-admin.site.register(models.PlayerVotes)
+admin.site.register(models.PlayerVote)

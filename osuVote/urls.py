@@ -33,9 +33,7 @@ from django.urls import include
 urlpatterns += [
     path('votes/', include('votes.urls')),
 ]
-
-
-
+    
 # Add URL maps to redirect the base URL to our application
 # this thing sends ./ to ./votes/
 # from django.views.generic import RedirectView
